@@ -1263,9 +1263,6 @@ static int mdss_dsi_panel_off(struct mdss_panel_data *pdata)
 
 	mdss_dsi_panel_off_hdmi(ctrl, pinfo);
 	
-	pr_info("%s: mdss_dsi_panel_off time=%ums \n", __func__,
-		jiffies_to_msecs(jiffies-timeout));
-
 	display_on = false;
 
 end:
